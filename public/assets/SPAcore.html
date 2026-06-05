@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>SPAcore</title>
+	<link rel="stylesheet" href="SPAcore_files/style.css">
+</head>
+<body>
+	<nav>
+		<a href="#/">Home</a>
+		<a href="#/about">About</a>
+		<a href="#/products">Products</a>
+		<a href="#/utils">Utils</a>
+	</nav>
+	<main id="app">
+    	
+		<style>
+			.input-group{
+				display: flex;
+				flex-direacion: column;
+				align-items: flex-start;
+				gap: 12px;
+			}
+			#inputArea{
+				width: 400px;
+			}
+			#outputAreac{
+				width: 400px;
+			}
+		</style>
+	
+    	<div class="input-group">
+			<button id="calcBtn">Cal</button>
+			<br><br>
+			
+<textarea id="inputArea" rows="2"></textarea>
+
+			
+<textarea id="outputArea" rows="14 disable style=" width="400px;" backgroud:="" #f5f5f5;"=""></textarea>
+
+		</div>
+	</main>
+	<script type="module" src="SPAcore_files/app.js"></script>
+
+
+</body></html>
