@@ -6,5 +6,5 @@ import { render as productsRender, afterRender as productsAfter } from './pages/
 addRoute('/', homeRender, homeAfter);
 addRoute('/about', aboutRender, aboutAfter);
 addRoute('/products', productsRender, productsAfter);
-
+addRoute('/utils', utilsRender, utilsAfter);
 startRouter();
