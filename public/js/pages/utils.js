@@ -34,6 +34,11 @@ function inputArea(){
 `;
 }
 
+function inputHint(){
+	return `
+<p>qbag,(150+0)*(250+45)+zipper,pet12/pe50,0.28,0.05,0.68,6.8</P>
+	`;
+}
 
 function outputArea(){
 	return `
@@ -50,6 +55,7 @@ export function render() {
     	<div class="input-group">
 			${calcButton()}
 			${inputArea()}
+			${inputHint()}
 			${outputArea()}
 		</div>
 	`; 
