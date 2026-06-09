@@ -15,7 +15,7 @@ const MATERIALS = {
 
 const ACCESSORIES = {
 	'zipper': {method: 'width', price: 0.11},
-	'spout': {method: 'piece', price: 0},
+	'spout': {method: 'piece', price: 0.1},
 };
 
 export function calculate(params){
