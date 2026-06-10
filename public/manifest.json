@@ -1,0 +1,12 @@
+{
+  "name": "THT",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/assets/app_logo_512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

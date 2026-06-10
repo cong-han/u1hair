@@ -1,20 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-CN">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title>SPAcore</title>
-	<link rel="stylesheet" href="/css/style.css">
-</head>
-<body>
-	<nav>
-		<a href="#/">Home</a>
-		<a href="#/about">About</a>
-		<a href="#/products">Products</a>
-		<a href="#/utils">Utils</a>
-	</nav>
-	<main id="app">
-	</main>
-	<script type="module" src="/js/app.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>SPAcore</title>
+    <link rel="manifest" href="/manifest.json" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="#/">Home</a>
+        <a href="#/about">About</a>
+        <a href="#/products">Products</a>
+        <a href="#/utils">Utils</a>
+      </nav>
+    </header>
+    <main id="app"></main>
+    <footer>&copy; 2026 SpanXR</footer>
+    <script type="module" src="/js/app.js"></script>
+    <script>
+      if ('serviceWorker' in navigator){
+        navigator.serviceWorker.register('/sw.js');}
+      }
+    </script>
+  </body>
 </html>
