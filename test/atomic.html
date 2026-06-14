@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="css/style.css" rel="stylesheet" />
+    <style>
+      section {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    </style>
+    <base href="" target="" />
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+      <search>
+        <form action="./search/">
+          <label for="movie">Find a Movie</label>
+          <input type="search" id="movie" name="q" />
+          <button type="submit">Search</button>
+        </form>
+      </search>
+    </header>
+    <main>
+      <h1>HTML ELEMENTS</h1>
+      <section class="text-const">
+        <div>This is a div</div>
+        <p>
+          Pumas are large, cat-like animals which are found in America. When
+          reports came into London Zoo that a wild puma had been spotted
+          forty-five miles south of London, they were not taken seriously.
+          However, as the evidence began to accumulate, experts from the Zoo
+          felt obliged to investigate, for the descriptions given by people who
+          claimed to have seen the puma were extraordinarily similar.
+        </p>
+        <menu>
+          <li>home</li>
+          <li>about</li>
+          <li>contact</li>
+        </menu>
+        <ul>
+          <li>Chocolate chip cookies</li>
+          <li>Vanilla ice cream</li>
+          <li>Strawberry cheesecake</li>
+        </ul>
+        <ol>
+          <li>Step1</li>
+          <li>Step2</li>
+          <li>Step3</li>
+        </ol>
+        <dl>
+          <dt>NBA</dt>
+          <dd>National Basketball Association</dd>
+        </dl>
+        <figure>
+          <img src="https://picsum.photos/400/300" alt="400x300 photos" />
+          <figcaption>a picture</figcaption>
+        </figure>
+        <hr />
+        <pre>
+        function sayHi() {
+            console.log("Hello World");
+        }
+      </pre
+        >
+        <blockquote cite="https://examole.com/churchill-speech">
+          Success is not final, failure is not fatal.
+          <cite>&mdash; Winston Chrchill</cite>
+        </blockquote>
+      </section>
+      <hr />
+      <section class="inline-text-semantics"></section>
+      <p>
+        <a href="https://example.com">这是一个链接</a>，
+        <abbr title="HyperText Markup Language">HTML</abbr> 是网页的基础。
+        <bdi>עברית</bdi> 和
+        <bdo dir="rtl">RIGHT-TO-LEFT</bdo> 可以处理不同方向的文字。
+        这段文字中的<br />换行用了 &lt;br&gt; 标签。
+        <cite>《代码大全》</cite> 是一本经典的书。 使用
+        <code>console.log()</code> 可以输出调试信息。
+        <data value="2026">今年</data> 我学习了前端开发。
+        <dfn>API</dfn> 指的是应用程序接口。 <em>请注意</em> 这个提示很重要。
+        按下 <kbd>Ctrl</kbd> + <kbd>S</kbd> 保存文件。
+        我<mark>特别强调</mark>这一点。 <q>学而不思则罔</q> 是孔子的名言。
+        日语中的注音 <ruby>漢字<rt>かんじ</rt></ruby> 可以帮助阅读。 这是一个
+        <samp>示例输出</samp> 的结果。
+        <small>（这是补充说明的小字）</small>
+        使用 <span style="color: red">span</span> 可以包裹行内内容。
+        <strong>警告：</strong> 这是重要信息。 H<sub>2</sub>O 是水的化学式， E =
+        mc<sup>2</sup> 是质能方程。
+        <time datetime="2026-06-12">2026年6月12日</time> 我写下了这行代码。
+        <var>x</var> 加上 <var>y</var> 等于 <var>z</var>。 这里有一个很长的词
+        Pneumonoultramicroscopicsilico<wbr />volcanoconiosis 可以在需要时断行。
+      </p>
+      <hr />
+      <section class="multimedia">
+        <img src="https://picsum.photos/400/400" alt="" />
+        <video width="" height="" controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="" />
+          <track
+            src="https://www.w3schools.com/html/subtitles_en.vtt"
+            kind="subtitles"
+            srclang="en"
+            label="English"
+          />
+        </video>
+        <audio
+          src="https://www.w3schools.com/html/horse.mp3"
+          type="audio/mpeg"
+          controls
+        ></audio>
+        <figure style="margin: 0">
+          <!-- https://www.image-map.net/ -->
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/8/83/Equirectangular_projection_SW.jpg"
+            alt="World Map"
+            usemap="#worldMap"
+            width="800"
+          />
+          <map name="worldMap">
+            <area
+              shape="rect"
+              coords="350,100,480,200"
+              href="https://en.wikipedia.org/wiki/China"
+              target="_blank"
+              title="China"
+              alt="China"
+            />
+            <area
+              shape="rect"
+              coords="100,80,250,180"
+              href="https://en.wikipedia.org/wiki/Europe"
+              target="_blank"
+              title="Europe"
+              alt="Europe"
+            />
+            <area
+              shape="rect"
+              coords="150,200,320,350"
+              href="https://en.wikipedia.org/wiki/Africa"
+              target="_blank"
+              title="Africa"
+              alt="Africa"
+            />
+            <area
+              shape="rect"
+              coords="50,100,150,200"
+              href="https://en.wikipedia.org/wiki/North_America"
+              target="_blank"
+              title="North America"
+              alt="North America"
+            />
+            <area
+              shape="rect"
+              coords="450,80,560,180"
+              href="https://en.wikipedia.org/wiki/Japan"
+              target="_blank"
+              title="Japan"
+              alt="Japan"
+            />
+          </map>
+        </figure>
+      </section>
+      <hr />
+      <section class="tables">
+        <table border="1">
+          <caption>
+            Employee Salary List
+          </caption>
+
+          <colgroup>
+            <col style="width: 120px" />
+            <col style="width: 140px" />
+            <col style="width: 140px" />
+          </colgroup>
+
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Position</th>
+              <th>Monthly Salary</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Tom Smith</td>
+              <td>Front‑end Developer</td>
+              <td>8000</td>
+            </tr>
+            <tr>
+              <td>Leo Wilson</td>
+              <td>Back‑end Developer</td>
+              <td>9000</td>
+            </tr>
+          </tbody>
+
+          <tfoot>
+            <tr>
+              <td colspan="2">Average Salary</td>
+              <td>8500</td>
+            </tr>
+          </tfoot>
+        </table>
+      </section>
+      <hr />
+      <section class="forms">
+        <form>
+          <fieldset>
+            <legend>User Info</legend>
+            <label for="">Name: <input type="text" name="" value="" /></label>
+            <br />
+            <label for="">Message: <textarea rows="" cols=""></textarea></label>
+            <br />
+            <select>
+              <option value="">Red</option>
+              <option value="">Green</option>
+            </select>
+            <button type="submit">OK</button>
+          </fieldset>
+        </form>
+        <input type="number" name="" value="" />
+        <input type="email" name="" value="" />
+        <input type="password" name="" value="" />
+        <input type="radio" name="" value="" />
+        <label for="agree">I agree</label>
+        <input type="checkbox" id="agree" name="agree" value="" />
+        <input type="file" name="" value="" />
+        <progress value="" max=""></progress>
+        <meter value=""></meter>
+      </section>
+      <hr />
+      <section class="embedded-content">
+        <iframe src="https://example.com" width="600" height="400"></iframe>
+      </section>
+      <hr />
+      <section class="scripting">
+        <canvas id="myCanvas" width="400" height="300"></canvas>
+        <script>
+          const canvas = document.getElementById("myCanvas");
+          const ctx = canvas.getContext("2d");
+
+          ctx.fillStyle = "#4A90D9";
+          ctx.fillRect(50, 50, 200, 100);
+        </script>
+      </section>
+      <hr />
+      <section class="interactive">
+        <!-- FAQ -->
+        <details>
+          <summary>How to calculate bag area?</summary>
+          <p>Area = Width × (Height + Half Depth) × 2 ÷ 1,000,000</p>
+        </details>
+        <details>
+          <summary>What is the default waste factor?</summary>
+          <p>Default is 1.05, can be customized in input parameters.</p>
+        </details>
+        <dialog id="myDialog">
+          <p>This is a native dialog.</p>
+          <button id="closeBtn">Close</button>
+        </dialog>
+      </section>
+      <hr />
+      <section class="demarcating-edits">
+        <p>price: 998<del>$199</del></p>
+        <ins></ins>
+      </section>
+      <hr />
+      <section class="web-components">
+        <slot>slot</slot><template>template</template>
+      </section>
+      <hr />
+      <article></article>
+      <aside></aside>
+      <hgroup></hgroup>
+    </main>
+    <footer>
+      <address>
+        <a href="mailto:jim@example.com">jim@example.com</a><br />
+        <a href="tel:+14155550132">+1 (415) 555‑0132</a>
+      </address>
+    </footer>
+  </body>
+</html>

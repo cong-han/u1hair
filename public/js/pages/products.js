@@ -1,32 +1,35 @@
 export async function render() {
-    try {
-        const response = await fetch('/data/products.csv');
-        if (!response.ok) {
-            throw new Error('CSV 文件加载失败');
-        }
-        const csvText = await response.text();
+  try {
+    const response = await fetch("/data/products.csv");
+    if (!response.ok) {
+      throw new Error("CSV 文件加载失败");
+    }
 
-        const lines = csvText.trim().split('\n');
-        const headers = lines[0].split(',').map(h => h.trim());
-        const products = [];
-        for (let i = 1; i < lines.length; i++) {
-            const values = lines[i].split(',').map(v => v.trim());
-            const item = {};
-            headers.forEach((header, index) => {
-                item[header] = values[index] || '';
-            });
-            products.push(item);
-        }
+    const lines = csvText.trim().split("\n");
+    const headers = lines[0].split(",").map((h) => h.trim());
+    const products = [];
+    for (let i = 1; i < lines.length; i++) {
+      const values = lines[i].split(",").map((v) => v.trim());
+      const item = {};
+      headers.forEach((header, index) => {
+        item[header] = values[index] || "";
+      });
+      products.push(item);
+    }
 
-        const cardsHTML = products.map(p => `
+    const cardsHTML = products
+      .map(
+        (p) => `
             <div class="product-card">
                 <img src="${p.image}" alt="${p.title}" class="product-img">
                 <h3 class="product-title">${p.title}</h3>
                 <p class="product-subtitle">${p.subtitle}</p>
             </div>
-        `).join('');
+        `,
+      )
+      .join("");
 
-        return `
+    return `
             <style>
                 .products-page {
                     display: grid;
@@ -57,15 +60,14 @@ export async function render() {
                 ${cardsHTML}
             </div>
         `;
-
-    } catch (error) {
-        return `
+  } catch (error) {
+    return `
             <h1>产品目录</h1>
             <p style="color: red;">加载失败：${error.message}</p>
         `;
-    }
+  }
 }
 
 export function afterRender() {
-    // 暂无交互
+  // 暂无交互
 }
