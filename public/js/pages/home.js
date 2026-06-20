@@ -6,7 +6,8 @@ export async function render() {
 
   const wordsByTopic = {};
   words.forEach((word) => {
-    const topic = word.topic;
+    const topic = word.topic ? word.topic.split(",")[0].trim() : "";
+    if (!topic) return;
     if (!wordsByTopic[topic]) wordsByTopic[topic] = [];
     wordsByTopic[topic].push(word);
   });
